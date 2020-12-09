@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">glup</string>
+    <string name="app_name">Glup</string>
 
     // Bottons Main Layout
     <string name="gps">Map</string>
