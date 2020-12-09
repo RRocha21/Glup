@@ -1,1 +1,7 @@
 # Glup
+#TO DO:
+#1 -> MENU INICIAL
+#2 -> PROFILE(LOGIN)
+#3 -> SETTINGS
+#4 -> PAYMENTS
+#5 -> MAPS
