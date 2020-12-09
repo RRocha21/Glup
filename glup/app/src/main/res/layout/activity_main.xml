@@ -20,7 +20,8 @@
         app:layout_constraintBottom_toTopOf="@+id/button_pay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/yellowglup"/>
 
     <Button
         android:id="@+id/button_pay"
