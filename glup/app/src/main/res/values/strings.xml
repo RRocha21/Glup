@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">glup</string>
+
+    // Bottons Main Layout
+    <string name="button_gps">Map</string>
+    <string name="button_pay">Payments</string>
+    <string name="button_profile">Profile</string>
+    <string name="button_settings">Settings</string>
+
 </resources>
