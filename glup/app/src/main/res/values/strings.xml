@@ -7,4 +7,19 @@
     <string name="profile">Profile</string>
     <string name="settings">Settings</string>
 
+    // Text for Map Layout
+    <string name="map_text">You are in Maps!</string>
+
+    // Text for Payments Layout
+    <string name="payments_text">You are in Payments!</string>
+
+    // Text for Profile Layout
+    <string name="profile_text">You are in Profile!</string>
+
+    // Text for Settings Layout
+    <string name="settings_text">You are in Settings!</string>
+
+
+
+
 </resources>
