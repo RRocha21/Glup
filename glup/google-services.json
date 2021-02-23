@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706349234027",
+    "project_id": "glup-8a98c",
+    "storage_bucket": "glup-8a98c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706349234027:android:88815f7fc9e58df2c33e2e",
+        "android_client_info": {
+          "package_name": "com.example.glup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706349234027-a7kffcskjboo9a1kk3842umslb3cn8op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFtwptVARzOBtwYZcgWxwcJx1DovntPyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706349234027-a7kffcskjboo9a1kk3842umslb3cn8op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
