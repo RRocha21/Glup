@@ -19,7 +19,6 @@
     // Text for Settings Layout
     <string name="settings_text">You are in Settings!</string>
 
-
-
-
+    // Text for Login Layout
+    <string name="welcome_text">Hello There, Welcome Back!</string>
 </resources>
