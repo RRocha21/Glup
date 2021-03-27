@@ -2,11 +2,11 @@ package com.example.glup
 
 class UserHelperClass {
 
-    var name: String
-    var username: String
-    var email: String
-    var phone: String
-    var password: String
+    val name: String
+    val username: String
+    val email: String
+    val phone: String
+    val password: String
 
     constructor()
 
