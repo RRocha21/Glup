@@ -22,35 +22,37 @@
 
         </ImageView>
 
-        <ImageView
-            android:id="@+id/imagem_logotipo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-
-            android:layout_marginTop="1dp"
-            android:layout_toRightOf="@+id/imagem_de_perfil"
-            android:src="@drawable/glup">
-
-        </ImageView>
-
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="30dp"
             android:layout_toRightOf="@+id/imagem_de_perfil"
             android:text="tony costa">
 
 
         </TextView>
+
+        <TextView
+            android:id="@+id/perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_toRightOf="@+id/imagem_de_perfil"
+            android:text="Perfil"
+            android:textSize="50dp" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
         android:background="@color/yellowglup">
 
 
@@ -58,7 +60,11 @@
             android:id="@+id/imagem_nota"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_m="50dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="21dp"
             android:src="@drawable/nota">
 
         </ImageView>
@@ -68,26 +74,104 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imagem_nota"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
 
-            android:layout_marginTop="10dp"
+
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="-35dp"
             android:text="10$">
 
 
         </TextView>
+
+        <Button
+            android:id="@+id/taloes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="62dp"
+            android:text="Talões" />
+
+        <Button
+            android:id="@+id/carteira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="39dp"
+            android:text="Carteira" />
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:background="@color/greenglup"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <RelativeLayout
-        android:layout_width="119dp"
-        android:layout_height="60dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:hint="Full name">
 
-        android:background="@color/purple_200"
-        android:baselineAligned="false">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:text="Tone costa" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:hint="email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:text="Tone costa" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:hint="telemovel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:text="Tone costa" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:hint="Full name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:text="Tone costa" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/atualizar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/yellowglup"
+            android:text="Atualizar Dados" />
 
 
-    </RelativeLayout>
+    </LinearLayout>
+
+
+
 
 
 </LinearLayout>
