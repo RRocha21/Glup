@@ -1,235 +1,317 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <RelativeLayout
-
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
         android:background="@color/greenglup"
         android:padding="20dp">
 
 
         <ImageView
-            android:id="@+id/imagem_de_perfil"
+            android:id="@+id/profile_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/antoniocosta">
+            android:src="@drawable/antoniocosta"/>
 
-        </ImageView>
 
         <TextView
-
+            android:id="@+id/full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="30dp"
-            android:layout_toRightOf="@+id/imagem_de_perfil"
-            android:text="tony costa">
-
-
-        </TextView>
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/bungee_regular"
+            android:layout_toRightOf="@+id/profile_image"
+            android:includeFontPadding="false"
+            android:textSize="20sp"
+            android:text="António Costa"/>
 
         <TextView
-            android:id="@+id/perfil"
+            android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/bungee_regular"
+            android:layout_toRightOf="@+id/profile_image"
+            android:includeFontPadding="false"
+            android:layout_below="@+id/full_name"
+            android:textSize="14sp"
+            android:text="tony_costa"/>
 
-
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="5dp"
-
-            android:layout_toRightOf="@+id/imagem_de_perfil"
-            android:text="Perfil"
-            android:textSize="50dp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="163dp"
-        android:background="@color/yellowglup">
-
-
-        <ImageView
-            android:id="@+id/imagem_talao"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_m="50dp"
-            android:layout_marginStart="161dp"
-            android:layout_marginTop="22dp"
-            android:src="@drawable/recibo">
-
-        </ImageView>
-
-        <ImageView
-            android:id="@+id/imagem_nota"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_m="50dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="21dp"
-            android:src="@drawable/nota">
-
-        </ImageView>
-
-        <ImageView
-            android:id="@+id/imagem_matricula"
-            android:layout_width="85dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_m="50dp"
-            android:layout_marginStart="291dp"
-            android:layout_marginTop="22dp"
-            android:src="@drawable/matricula">
-
-        </ImageView>
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imagem_nota"
-            android:layout_alignParentStart="true"
-
-
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="-34dp"
-            android:text="10$">
-
-
-        </TextView>
-
-        <Button
-            android:id="@+id/taloes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="182dp"
-            android:layout_marginBottom="39dp"
-            android:text="Talões" />
-
-        <Button
-            android:id="@+id/matriculas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="13dp"
-            android:layout_marginBottom="39dp"
-            android:text="matriculas" />
-
-        <Button
-            android:id="@+id/carteira"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="39dp"
-            android:text="Carteira" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="419dp"
-        android:background="@color/greenglup"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-90dp">
 
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Full name">
-
-            <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/greenglup"
+            app:cardElevation="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/yellowglup">
+            
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tone costa" />
+                android:layout_height="match_parent"
+                android:padding="5dp">
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nif">
+                <Button
+                    android:id="@+id/button_profile_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"/>
+                
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/money_icon_app"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/payment_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$123"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/bungee_regular"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/payment_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:layout_below="@+id/payment_label"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1.2"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/greenglup"
+            app:cardElevation="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/yellowglup">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="12345667" />
+                android:layout_height="match_parent"
+                android:padding="5dp">
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email">
+                <Button
+                    android:id="@+id/button_profile_license_plates"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"/>
 
-            <com.google.android.material.textfield.TextInputEditText
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/license_plate_icon_app"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/license_plate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/bungee_regular"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/license_plate_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="License Plates"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:layout_below="@+id/license_plate_label"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/greenglup"
+            app:cardElevation="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/yellowglup">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="toninho@ua.pt" />
+                android:layout_height="match_parent"
+                android:padding="5dp">
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="nº telemovel">
+                <Button
+                    android:id="@+id/button_profile_tickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"/>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="937520789" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bills_icon_app"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tickets_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/bungee_regular"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/tickets_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tickets"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:layout_below="@+id/tickets_label"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="nº telemovel">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="937520789" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="1234" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-
-        <Button
-            android:id="@+id/atualizar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/yellowglup"
-            android:text="Atualizar Dados" />
-
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="-40dp">
 
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="#00000000"
+            app:boxStrokeColor="@color/greenglup">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:text="António Costa"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/greenglup"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="#00000000"
+            app:boxStrokeColor="@color/greenglup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="glup2020"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="#00000000"
+            app:boxStrokeColor="@color/greenglup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="antoniocosta@ua.pt"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIF"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="#00000000"
+            app:boxStrokeColor="@color/greenglup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="247194244"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="#00000000"
+            app:boxStrokeColor="@color/greenglup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="960345345"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
+
+
+
+
+

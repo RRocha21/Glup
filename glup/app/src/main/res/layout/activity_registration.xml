@@ -76,6 +76,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/pass_text"
             app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/greenglup"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
