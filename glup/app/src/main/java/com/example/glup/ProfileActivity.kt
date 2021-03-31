@@ -19,6 +19,9 @@ class ProfileActivity: AppCompatActivity() {
         findViewById<Button>(R.id.button_profile_tickets).setOnClickListener {
             openTicketsActivity()
         }
+        findViewById<Button>(R.id.button_profile_photo).setOnClickListener {
+            openPhotoActivity()
+        }
     }
 
     private fun openBalanceActivity() {
@@ -32,6 +35,10 @@ class ProfileActivity: AppCompatActivity() {
     }
 
     private fun openTicketsActivity() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+    private fun openPhotoActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
