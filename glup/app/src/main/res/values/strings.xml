@@ -35,4 +35,7 @@
     <string name="sign_up_text">SIGN UP</string>
     <string name="back_to_sign_in_text">ALREADY HAVE AN ACCOUNT? LOG IN</string>
 
+    // Text for Settings Layout
+    <string name="options_text">Options!!!</string>
+
 </resources>
