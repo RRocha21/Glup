@@ -7,7 +7,6 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.Query
-import com.google.firebase.database.ValueEventListener
 
 
 class LoginActivity : AppCompatActivity() {
@@ -38,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun openforgotpass() {
-        val intent=Intent(this,MainActivity2)
+        val intent = Intent(this, ForgotActivity::class.java)
         startActivity(intent)
     }
 
@@ -63,8 +62,6 @@ class LoginActivity : AppCompatActivity() {
         val myRef = FirebaseDatabase.getInstance().getReference("users")
 
         val checkUser: Query = myRef.orderByChild("username").equalTo(usernameEntered)
-
-
 
     }
     private fun validateUser(): Boolean {

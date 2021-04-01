@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity2 : AppCompatActivity() {
+class ForgotActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_forgot)
 
 
         findViewById<Button>(R.id.popo).setOnClickListener {
@@ -19,7 +19,7 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun dentro() {
-        val intent=Intent(this,ProfileActivity)
+        val intent=Intent(this,ProfileActivity::class.java)
         startActivity(intent)
 
 

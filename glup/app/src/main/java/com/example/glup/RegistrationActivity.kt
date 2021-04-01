@@ -178,7 +178,7 @@ class RegistrationActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    data class UserHelper(val userid: String? = null, val fullname: String? = null, val email: String? = null, val password: String? = null, val nif: String? = null, val phone: String? = null) {
+    data class UserHelper(val userid: String? = null, val fullname: String? = null, val email: String? = null, val password: String? = null, val nif: String? = null, val phonenoz: String? = null) {
         // Null default values create a no-argument default constructor, which is needed
         // for deserialization from a DataSnapshot.
     }
