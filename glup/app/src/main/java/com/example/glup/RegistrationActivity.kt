@@ -71,6 +71,7 @@ class RegistrationActivity : AppCompatActivity() {
         // going to next activity
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+
     }
 
     private fun validateName(): Boolean {

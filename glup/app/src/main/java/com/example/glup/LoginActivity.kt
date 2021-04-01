@@ -4,9 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.Query
+import com.google.firebase.database.*
+import com.google.firebase.database.ktx.getValue
 
 
 class LoginActivity : AppCompatActivity() {
@@ -55,13 +56,41 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+
     private fun isUser() {
         val usernameEntered = loguser.text.toString()
         val passEntered = logpass.text.toString()
 
         val myRef = FirebaseDatabase.getInstance().getReference("users")
 
-        val checkUser: Query = myRef.orderByChild("username").equalTo(usernameEntered)
+        val checkUser: Query = myRef.orderByChild("userid").equalTo(usernameEntered)
+
+        val postListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                if(dataSnapshot.exists()) {
+                    val passfromDb = dataSnapshot.child(usernameEntered).child("password").getValue<String>()
+
+                    if(passfromDb.equals(passEntered)) {
+
+                        val namefromDb = dataSnapshot.child(usernameEntered).child("fullname").getValue<String>()
+                        val userfromDb = dataSnapshot.child(usernameEntered).child("userid").getValue<String>()
+                        val emailfromDb = dataSnapshot.child(usernameEntered).child("email").getValue<String>()
+                        val phonefromDb = dataSnapshot.child(usernameEntered).child("phoneno").getValue<String>()
+                        val niffromDb = dataSnapshot.child(usernameEntered).child("nif").getValue<String>()
+                    }
+                }
+
+
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                // Getting Post failed, log a message
+
+            }
+        }
+        myRef.addValueEventListener(postListener)
+
 
     }
     private fun validateUser(): Boolean {
