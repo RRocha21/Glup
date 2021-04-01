@@ -11,9 +11,7 @@ class ForgotActivity : AppCompatActivity() {
         setContentView(R.layout.activity_forgot)
 
 
-        findViewById<Button>(R.id.popo).setOnClickListener {
-            dentro()
-        }
+
 
 
     }

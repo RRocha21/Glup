@@ -50,10 +50,6 @@ class LoginActivity : AppCompatActivity() {
             isUser()
         }
 
-
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-
     }
 
 
@@ -63,24 +59,38 @@ class LoginActivity : AppCompatActivity() {
 
         val myRef = FirebaseDatabase.getInstance().getReference("users")
 
-        val checkUser: Query = myRef.orderByChild("userid").equalTo(usernameEntered)
 
         val postListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
 
                 if(dataSnapshot.exists()) {
-                    val passfromDb = dataSnapshot.child(usernameEntered).child("password").getValue<String>()
 
-                    if(passfromDb.equals(passEntered)) {
+                    val userfromDb = dataSnapshot.child(usernameEntered).child("userid").getValue<String>()
+                    if (userfromDb.equals(usernameEntered)) {
+                        loguser.setError(null)
 
-                        val namefromDb = dataSnapshot.child(usernameEntered).child("fullname").getValue<String>()
-                        val userfromDb = dataSnapshot.child(usernameEntered).child("userid").getValue<String>()
-                        val emailfromDb = dataSnapshot.child(usernameEntered).child("email").getValue<String>()
-                        val phonefromDb = dataSnapshot.child(usernameEntered).child("phoneno").getValue<String>()
-                        val niffromDb = dataSnapshot.child(usernameEntered).child("nif").getValue<String>()
+                        val passfromDb = dataSnapshot.child(usernameEntered).child("password").getValue<String>()
+
+                        if (passfromDb.equals(passEntered)) {
+
+                            logpass.setError(null)
+
+                            val namefromDb = dataSnapshot.child(usernameEntered).child("fullname").getValue<String>()
+                            //                        val userfromDb = dataSnapshot.child(usernameEntered).child("userid").getValue<String>()
+                            //                        val emailfromDb = dataSnapshot.child(usernameEntered).child("email").getValue<String>()
+                            //                        val phonefromDb = dataSnapshot.child(usernameEntered).child("phoneno").getValue<String>()
+                            //                        val niffromDb = dataSnapshot.child(usernameEntered).child("nif").getValue<String>()
+
+                            openMainActivity(namefromDb)
+
+                        } else {
+                            logpass.setError("Wrong Password")
+                            logpass.requestFocus()
+                        }
+                    } else {
+                        loguser.setError("User does not exist")
                     }
                 }
-
 
             }
 
@@ -91,8 +101,8 @@ class LoginActivity : AppCompatActivity() {
         }
         myRef.addValueEventListener(postListener)
 
-
     }
+
     private fun validateUser(): Boolean {
         val val_user = loguser.text.toString()
         val noWhiteSpace = ".*\\S+.*"
@@ -122,6 +132,13 @@ class LoginActivity : AppCompatActivity() {
 
     private fun openRegistrationActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun openMainActivity(passname: String? = null) {
+
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("name",passname)
         startActivity(intent)
     }
 }

@@ -28,7 +28,7 @@
     <string name="sign_text">Sign up to start your new Journey!</string>
     <string name="full_name_text">Full Name</string>
     <string name="username_text">Username</string>
-    <string name="pass_text">PassWord</string>
+    <string name="pass_text">Password</string>
     <string name="email_text">Email</string>
     <string name="nif_text">NIF (Optional)</string>
     <string name="phone_text">Phone Number (Optional)</string>

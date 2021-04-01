@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val ss:String = intent.getStringExtra("name").toString()
+
+
         findViewById<Button>(R.id.button_gps).setOnClickListener {
             openMapActivity()
         }

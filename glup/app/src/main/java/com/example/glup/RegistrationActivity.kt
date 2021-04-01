@@ -61,9 +61,11 @@ class RegistrationActivity : AppCompatActivity() {
         val pass = regpass.text.toString()
         val nif = regnif.text.toString()
         val phone = regphone.text.toString()
+        val balance = 0;
+        val image = R.drawable.user_icon_app
 
         // sending the info to data class
-        val new_user = UserHelper(userid, name, email, pass, nif, phone)
+        val new_user = UserHelper(userid, name, email, pass, nif, phone, balance, image)
 
         // write in the database
         newuser.child(userid).setValue(new_user)
@@ -146,9 +148,6 @@ class RegistrationActivity : AppCompatActivity() {
         if (val_phone.isEmpty()) {
             regphone.setError(null)
             return true
-        } else if (android.util.Patterns.PHONE.matcher(val_phone).matches()) {
-            regphone.setError("Invalid Phone Number")
-            return false
         } else if (val_phone.count()>9 || val_phone.count()<9) {
             regphone.setError("Phone Number must be 9 numbers")
             return false
@@ -179,7 +178,7 @@ class RegistrationActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    data class UserHelper(val userid: String? = null, val fullname: String? = null, val email: String? = null, val password: String? = null, val nif: String? = null, val phonenoz: String? = null) {
+    data class UserHelper(val userid: String? = null, val fullname: String? = null, val email: String? = null, val password: String? = null, val nif: String? = null, val phoneno: String? = null,  val balance: Int? = null, val image: Int? = null ) {
         // Null default values create a no-argument default constructor, which is needed
         // for deserialization from a DataSnapshot.
     }
