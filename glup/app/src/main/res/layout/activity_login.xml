@@ -28,7 +28,7 @@
         android:id="@+id/sign_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign in to continue"
+        android:text="@string/sign_in_text"
         android:textSize="25sp"
         android:fontFamily="@font/antic_regular"/>
 
@@ -40,13 +40,13 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"/>
@@ -54,14 +54,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/pass_text"
             app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/greenglup"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -79,7 +80,8 @@
             android:layout_gravity="right"
             android:elevation="0dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="5dp"
+            />
         <Button
             android:id="@+id/button_sign_in"
             android:layout_width="match_parent"

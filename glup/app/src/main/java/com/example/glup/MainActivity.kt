@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openMapActivity() {
-        val intent = Intent(this, MapActivity::class.java)
+            val intent = Intent(this, MapActivity::class.java)
         startActivity(intent)
     }
     private fun openPaymentsActivity() {

@@ -21,4 +21,18 @@
 
     // Text for Login Layout
     <string name="welcome_text">Hello There, Welcome Back!</string>
+    <string name="sign_in_text">Sign in to continue</string>
+
+    // Text for Registration Layout
+    <string name="welcome_text_reg">Welcome!</string>
+    <string name="sign_text">Sign up to start your new Journey!</string>
+    <string name="full_name_text">Full Name</string>
+    <string name="username_text">Username</string>
+    <string name="pass_text">PassWord</string>
+    <string name="email_text">Email</string>
+    <string name="nif_text">NIF (Optional)</string>
+    <string name="phone_text">Phone Number (Optional)</string>
+    <string name="sign_up_text">SIGN UP</string>
+    <string name="back_to_sign_in_text">ALREADY HAVE AN ACCOUNT? LOG IN</string>
+
 </resources>
