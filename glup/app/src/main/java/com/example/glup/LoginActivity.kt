@@ -19,6 +19,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        findViewById<Button>(R.id.button_forgot).setOnClickListener {
+            openforgotpass()
+        }
+
+
         loguser  = findViewById<EditText>(R.id.login_username)
         logpass   = findViewById<EditText>(R.id.login_password)
 
@@ -32,6 +37,10 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    private fun openforgotpass() {
+        val intent=Intent(this,MainActivity2)
+        startActivity(intent)
+    }
 
     private fun ValidateLogin() {
 
