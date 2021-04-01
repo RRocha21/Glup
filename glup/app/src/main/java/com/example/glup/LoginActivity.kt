@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun openforgotpass() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, ForgotActivity::class.java)
         startActivity(intent)
     }
 

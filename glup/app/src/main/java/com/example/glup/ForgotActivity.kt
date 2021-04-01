@@ -11,16 +11,16 @@ class ForgotActivity : AppCompatActivity() {
         setContentView(R.layout.activity_forgot)
 
 
-
+        findViewById<Button>(R.id.next_forgot).setOnClickListener(){
+            openValidateCode()
+        }
 
 
     }
 
-    private fun dentro() {
-        val intent=Intent(this,ProfileActivity::class.java)
+    private fun openValidateCode() {
+        val intent=Intent(this,Forgot2Activity::class.java)
         startActivity(intent)
-
-
     }
 
 

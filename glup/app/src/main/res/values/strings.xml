@@ -38,4 +38,7 @@
     // Text for Settings Layout
     <string name="options_text">Options!!!</string>
 
+    //
+    <string name="code_text">CO\nDE</string>
+
 </resources>

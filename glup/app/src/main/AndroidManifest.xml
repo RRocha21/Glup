@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Glup">
+        <activity android:name=".Forgot2Activity"></activity>
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -22,7 +23,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ForgotActivity"/>
+        <activity android:name=".ForgotActivity" />
     </application>
 
 </manifest>
