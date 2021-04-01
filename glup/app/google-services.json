@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "382122166224",
+    "firebase_url": "https://glup-2020-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "glup-2020",
+    "storage_bucket": "glup-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382122166224:android:db43e81e9130a7eee55bd5",
+        "android_client_info": {
+          "package_name": "com.example.glup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382122166224-0j88nij4h36sf3033ilu51cm087po6c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp2VtvJYGsg9Iecvs9uL43_ZyUfk3NUbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382122166224-0j88nij4h36sf3033ilu51cm087po6c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
