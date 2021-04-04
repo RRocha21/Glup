@@ -5,23 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class ForgotActivity : AppCompatActivity() {
+class Forgot3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forgot)
+        setContentView(R.layout.activity_forgot3)
 
-
-        findViewById<Button>(R.id.next_forgot).setOnClickListener(){
-            openNext()
+        findViewById<Button>(R.id.next_forgot3).setOnClickListener(){
+            openVerifyCode()
         }
-
-
     }
 
-    private fun openNext() {
-        val intent=Intent(this,Forgot2Activity::class.java)
+    private fun openVerifyCode() {
+        val intent= Intent(this,LoginActivity::class.java)
         startActivity(intent)
     }
-
 
 }

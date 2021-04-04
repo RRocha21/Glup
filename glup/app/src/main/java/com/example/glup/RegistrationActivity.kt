@@ -61,7 +61,7 @@ class RegistrationActivity : AppCompatActivity() {
         val pass = regpass.text.toString()
         val nif = regnif.text.toString()
         val phone = regphone.text.toString()
-        val balance = 0;
+        val balance = 0
         val image = R.drawable.user_icon_app
 
         // sending the info to data class
