@@ -15,7 +15,6 @@ class RegistrationActivity : AppCompatActivity() {
     private lateinit var regemail:EditText
     private lateinit var regpass: EditText
     private lateinit var reg_pass: EditText
-
     private lateinit var myAuth: FirebaseAuth
 
 //------------------------------------------------------------------------------------------------------
@@ -23,14 +22,12 @@ class RegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
-
         myAuth= FirebaseAuth.getInstance()
         // get what was written
 
         regemail = findViewById<EditText>(R.id.registration_email)
         regpass   = findViewById<EditText>(R.id.registration_password)
         reg_pass   = findViewById<EditText>(R.id.registration_password2)
-
 
 
         // When sign up button is pressed
@@ -46,16 +43,13 @@ class RegistrationActivity : AppCompatActivity() {
     }
 
 
-
     private fun RegisterUserActivity() {
 
         if(!validatePass() or !validateEmail()) {
             return
         }
 
-
         // more variables and put the text in String format
-
         val email = regemail.text.toString()
         val pass = regpass.text.toString()
 
@@ -66,7 +60,6 @@ class RegistrationActivity : AppCompatActivity() {
         startActivity(intent)
 
     }
-
 
 
     private fun createNewUser(email: String?, password: String?) {
@@ -115,7 +108,6 @@ class RegistrationActivity : AppCompatActivity() {
             return true
         }
     }
-
 
     private fun openLoginActivity() {
         val intent = Intent(this, LoginActivity::class.java)

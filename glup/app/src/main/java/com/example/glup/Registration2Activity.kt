@@ -53,7 +53,7 @@ class Registration2Activity : AppCompatActivity() {
         }
 
         // Prepare the Authentication
-        user= FirebaseAuth.getInstance()
+        val user= FirebaseAuth.getInstance().currentUser
 
         // Prepare the database
         val database = FirebaseDatabase.getInstance()
@@ -71,10 +71,10 @@ class Registration2Activity : AppCompatActivity() {
 
         val new_user = UserHelper(userid, name, nif, phone, balance, image)
 
-        val cuser = user.currentUser
+
 
         // write in the database
-        newuser.child(cuser.uid).setValue(new_user)
+        newuser.child(user.uid).setValue(new_user)
 
         // going to next activity
         val intent = Intent(this, MainActivity::class.java)
