@@ -45,6 +45,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.7.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.chaos.view:pinview:1.4.3'
+    implementation 'com.google.firebase:firebase-auth:20.0.3'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
