@@ -65,7 +65,7 @@
                 android:layout_toRightOf="@+id/view2"
                 android:includeFontPadding="false"
                 android:textSize="20sp"
-                android:text="António Costa"
+                android:text="User"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -79,7 +79,7 @@
                 android:includeFontPadding="false"
                 android:layout_below="@+id/full_name"
                 android:textSize="14sp"
-                android:text="tony_costa"/>
+                android:text="username"/>
 
         </RelativeLayout>
 
@@ -253,10 +253,9 @@
                 app:boxStrokeColor="@color/greenglup">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/change_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Full Name"
-                    android:text="António Costa"
                     android:inputType="text"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -273,10 +272,11 @@
                 app:boxStrokeColor="@color/greenglup">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/change_pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:text="glup2020"
+                    android:text=""
                     android:inputType="textPassword"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -291,10 +291,10 @@
                 app:boxStrokeColor="@color/greenglup">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/change_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:text="antoniocosta@ua.pt"
                     android:inputType="text"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -309,10 +309,10 @@
                 app:boxStrokeColor="@color/greenglup">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/change_nif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:text="247194244"
                     android:inputType="number"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -327,15 +327,16 @@
                 app:boxStrokeColor="@color/greenglup">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/change_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:text="960345345"
                     android:inputType="number"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/update_profile"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -68,13 +68,18 @@ class Registration2Activity : AppCompatActivity() {
         val balance = 0
         val image = R.drawable.user_icon_app
 
+        val new_user = UserHelper(userid, name, nif, phone,balance, image)
+        val new_plates = LicenseHelper("null","null","null","null","null","null")
+        val new_tickets = TicketsHelper("null","null","null","null","null","null")
 
-        val new_user = UserHelper(userid, name, nif, phone, balance, image)
 
 
 
         // write in the database
         newuser.child(user.uid).setValue(new_user)
+        newuser.child(user.uid).child("license").setValue(new_plates)
+        newuser.child(user.uid).child("tickets").setValue(new_tickets)
+
 
         // going to next activity
         val intent = Intent(this, MainActivity::class.java)
@@ -151,6 +156,15 @@ class Registration2Activity : AppCompatActivity() {
     }
 
     data class UserHelper(val userid: String? = null, val fullname: String? = null, val nif: String? = null, val phoneno: String? = null, val balance: Int? = null, val image: Int? = null) {
+        // Null default values create a no-argument default constructor, which is needed
+        // for deserialization from a DataSnapshot.
+    }
+
+    data class LicenseHelper(val first: String? = null, val second: String? = null, val third: String? = null, val fourth: String? = null, val fifth: String? = null, val sixth: String? = null) {
+        // Null default values create a no-argument default constructor, which is needed
+        // for deserialization from a DataSnapshot.
+    }
+    data class TicketsHelper(val first: String? = null, val second: String? = null, val third: String? = null, val fourth: String? = null, val fifth: String? = null, val sixth: String? = null, val seventh: String? = null)) {
         // Null default values create a no-argument default constructor, which is needed
         // for deserialization from a DataSnapshot.
     }
