@@ -149,7 +149,6 @@ class Registration2Activity : AppCompatActivity() {
         }
     }
 
-
     private fun openLoginActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
@@ -164,7 +163,7 @@ class Registration2Activity : AppCompatActivity() {
         // Null default values create a no-argument default constructor, which is needed
         // for deserialization from a DataSnapshot.
     }
-    data class TicketsHelper(val first: String? = null, val second: String? = null, val third: String? = null, val fourth: String? = null, val fifth: String? = null, val sixth: String? = null, val seventh: String? = null)) {
+    data class TicketsHelper(val first: String? = null, val second: String? = null, val third: String? = null, val fourth: String? = null, val fifth: String? = null, val sixth: String? = null, val seventh: String? = null) {
         // Null default values create a no-argument default constructor, which is needed
         // for deserialization from a DataSnapshot.
     }
