@@ -69,16 +69,12 @@ class Registration2Activity : AppCompatActivity() {
         val image = R.drawable.user_icon_app
 
         val new_user = UserHelper(userid, name, nif, phone,balance, image)
-        val new_plates = LicenseHelper("null","null","null","null","null","null")
-        val new_tickets = TicketsHelper("null","null","null","null","null","null")
-
-
 
 
         // write in the database
         newuser.child(user.uid).setValue(new_user)
-        newuser.child(user.uid).child("license").setValue(new_plates)
-        newuser.child(user.uid).child("tickets").setValue(new_tickets)
+        newuser.child(user.uid).child("license").child("1").setValue("1")
+        newuser.child(user.uid).child("tickets").child("1").setValue("1")
 
 
         // going to next activity
@@ -159,12 +155,4 @@ class Registration2Activity : AppCompatActivity() {
         // for deserialization from a DataSnapshot.
     }
 
-    data class LicenseHelper(val first: String? = null, val second: String? = null, val third: String? = null, val fourth: String? = null, val fifth: String? = null, val sixth: String? = null) {
-        // Null default values create a no-argument default constructor, which is needed
-        // for deserialization from a DataSnapshot.
-    }
-    data class TicketsHelper(val first: String? = null, val second: String? = null, val third: String? = null, val fourth: String? = null, val fifth: String? = null, val sixth: String? = null, val seventh: String? = null) {
-        // Null default values create a no-argument default constructor, which is needed
-        // for deserialization from a DataSnapshot.
-    }
 }
