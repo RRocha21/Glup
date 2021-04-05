@@ -4,16 +4,22 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import androidx.annotation.NonNull
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.*
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.getValue
 
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var loguser: EditText
+    private lateinit var logemail: EditText
     private lateinit var logpass: EditText
+    private lateinit var auth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,16 +29,17 @@ class LoginActivity : AppCompatActivity() {
             openforgotpass()
         }
 
+        findViewById<Button>(R.id.button_new_user).setOnClickListener {
+            openRegistrationActivity()
+        }
 
-        loguser  = findViewById<EditText>(R.id.login_username)
+        logemail  = findViewById<EditText>(R.id.login_email)
         logpass   = findViewById<EditText>(R.id.login_password)
+
+        auth= FirebaseAuth.getInstance()
 
         findViewById<Button>(R.id.button_sign_in).setOnClickListener {
            ValidateLogin()
-        }
-
-        findViewById<Button>(R.id.button_new_user).setOnClickListener {
-            openRegistrationActivity()
         }
 
     }
@@ -54,65 +61,35 @@ class LoginActivity : AppCompatActivity() {
 
 
     private fun isUser() {
-        val usernameEntered = loguser.text.toString()
+        val emailEntered = logemail.text.toString()
         val passEntered = logpass.text.toString()
 
-        val myRef = FirebaseDatabase.getInstance().getReference("users")
-
-
-        val postListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-
-                if(dataSnapshot.exists()) {
-
-                    val userfromDb = dataSnapshot.child(usernameEntered).child("userid").getValue<String>()
-                    if (userfromDb.equals(usernameEntered)) {
-                        loguser.setError(null)
-
-                        val passfromDb = dataSnapshot.child(usernameEntered).child("password").getValue<String>()
-
-                        if (passfromDb.equals(passEntered)) {
-
-                            logpass.setError(null)
-
-                            val namefromDb = dataSnapshot.child(usernameEntered).child("fullname").getValue<String>()
-                            //                        val userfromDb = dataSnapshot.child(usernameEntered).child("userid").getValue<String>()
-                            //                        val emailfromDb = dataSnapshot.child(usernameEntered).child("email").getValue<String>()
-                            //                        val phonefromDb = dataSnapshot.child(usernameEntered).child("phoneno").getValue<String>()
-                            //                        val niffromDb = dataSnapshot.child(usernameEntered).child("nif").getValue<String>()
-
-                            openMainActivity(namefromDb)
-
-                        } else {
-                            logpass.setError("Wrong Password")
-                            logpass.requestFocus()
-                        }
+        auth.signInWithEmailAndPassword(emailEntered, passEntered)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        openMainActivity()
                     } else {
-                        loguser.setError("User does not exist")
+                        Toast.makeText(this, "Error !!" + task.exception, Toast.LENGTH_LONG).show()
                     }
                 }
-
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                // Getting Post failed, log a message
-
-            }
-        }
-        myRef.addValueEventListener(postListener)
-
     }
 
-    private fun validateUser(): Boolean {
-        val val_user = loguser.text.toString()
-        val noWhiteSpace = ".*\\S+.*"
 
-        if (val_user.isEmpty()){
-            loguser.setError("Field cannot be empty")
-            return false;
-        } else {
-            loguser.setError(null)
-            return true;
+
+
+    private fun validateUser(): Boolean {
+        val val_email = logemail.text.toString()
+
+        if (val_email.isEmpty()){
+            logemail.setError("Field cannot be empty")
+            return false
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(val_email).matches()) {
+            logemail.setError("Invalid Email address")
+            return false
+        }
+        else {
+            logemail.setError(null)
+            return true
         }
     }
 
@@ -138,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
     private fun openMainActivity(passname: String? = null) {
 
         val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("name",passname)
+        intent.putExtra("name", passname)
         startActivity(intent)
     }
 }
