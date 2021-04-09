@@ -6,6 +6,7 @@ import android.text.Editable
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
@@ -36,7 +37,6 @@ class ProfileActivity: AppCompatActivity() {
         puser = findViewById<TextView>(R.id.user_name)
         pbalance = findViewById<TextView>(R.id.payment_label)
         pemail = findViewById<EditText>(R.id.change_email)
-        ppass   = findViewById<EditText>(R.id.change_pass)
         pnif   = findViewById<EditText>(R.id.change_nif)
         pphone   = findViewById<EditText>(R.id.change_phone)
         pname   = findViewById<EditText>(R.id.change_name)
@@ -99,7 +99,127 @@ class ProfileActivity: AppCompatActivity() {
 
     private fun updateprofile() {
 
+        if(!validateName() or !validateEmail() or !validatePhone() or !validateNif()) {
+            return
+        }
+
+        isDetailsChanged()
+        isEmailChanged()
+
+        Toast.makeText(this, "Details have changed sucessfully",Toast.LENGTH_LONG).show()
+
+//        val intent = Intent(this, MainActivity::class.java)
+//        startActivity(intent)
+
     }
+
+    private fun validateEmail(): Boolean {
+        val val_email = pemail.text.toString()
+
+        if (val_email.isEmpty()){
+            pemail.setError("Field cannot be empty")
+            return false
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(val_email).matches()) {
+            pemail.setError("Invalid Email address")
+            return false
+        }
+        else {
+            pemail.setError(null)
+            return true
+        }
+    }
+
+    private fun validateName(): Boolean {
+        val val_name = pname.text.toString()
+
+        if (val_name.isEmpty()){
+            pname.setError("Field cannot be empty")
+            return false;
+        }
+        else {
+            pname.setError(null)
+            return true;
+        }
+    }
+
+    private fun validatePhone(): Boolean {
+        val val_phone = pphone.text.toString()
+
+        if (val_phone.isEmpty()) {
+            pphone.setError(null)
+            return true
+        } else if (val_phone.count()>9 || val_phone.count()<9) {
+            pphone.setError("Phone Number must be 9 numbers")
+            return false
+        } else {
+            pphone.setError(null)
+            return true
+        }
+    }
+
+    private fun validateNif(): Boolean {
+        val val_nif = pnif.text.toString()
+
+        if (val_nif.isEmpty()) {
+            pnif.setError(null)
+            return true;
+        }else if (val_nif.count()>9 || val_nif.count()<9) {
+            pnif.setError("Nif must be 9 numbers")
+            return false
+        }else {
+            pnif.setError(null)
+            return true;
+        }
+    }
+
+    private fun isEmailChanged(): Boolean {
+        val user= FirebaseAuth.getInstance().currentUser
+
+        val emailfromDb = user.email
+
+        if(!pemail.equals(emailfromDb)){
+            user.updateEmail(pemail.text.toString())
+            Toast.makeText(this, "Details have changed sucessfully",Toast.LENGTH_LONG).show()
+            return true
+        } else {
+            return false
+        }
+
+    }
+
+    private fun isDetailsChanged() {
+        val user= FirebaseAuth.getInstance().currentUser
+
+        val myRef= FirebaseDatabase.getInstance().getReference("users")
+
+        val postListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                if (dataSnapshot.exists()) {
+                    val phonefromDb = dataSnapshot.child(user.uid).child("phoneno").getValue<String>()
+                    val namefromDb = dataSnapshot.child(user.uid).child("fullname").getValue<String>()
+                    val niffromDb = dataSnapshot.child(user.uid).child("nif").getValue<String>()
+
+                    if(!pphone.equals(phonefromDb)) {
+                        myRef.child(user.uid).child("phoneno").setValue(pphone.text.toString())
+                    }
+
+                    if(!pnif.equals(niffromDb)) {
+                        myRef.child(user.uid).child("nif").setValue(pnif.text.toString())
+                    }
+
+                    if(!pname.equals(namefromDb)) {
+                        myRef.child(user.uid).child("fullname").setValue(pname.text.toString())
+                    }
+                }
+            }
+            override fun onCancelled(databaseError: DatabaseError) {
+                // Getting Post failed, log a message
+            }
+        }
+        myRef.addListenerForSingleValueEvent(postListener)
+    }
+
 
     private fun openBalanceActivity() {
         val intent = Intent(this, MainActivity::class.java)
