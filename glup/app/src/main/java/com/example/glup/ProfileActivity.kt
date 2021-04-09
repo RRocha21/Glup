@@ -1,6 +1,7 @@
 package com.example.glup
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.text.Editable
 import android.widget.Button
@@ -91,8 +92,8 @@ class ProfileActivity: AppCompatActivity() {
                 }
             }
             override fun onCancelled(databaseError: DatabaseError) {
-                    // Getting Post failed, log a message
-                }
+                // Getting Post failed, log a message
+            }
         }
         myRef.addValueEventListener(postListener)
     }
@@ -112,7 +113,7 @@ class ProfileActivity: AppCompatActivity() {
 //        startActivity(intent)
 
     }
-
+    
     private fun validateEmail(): Boolean {
         val val_email = pemail.text.toString()
 
