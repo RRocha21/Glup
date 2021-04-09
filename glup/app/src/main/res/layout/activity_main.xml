@@ -1,63 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
 
-    <Button
-        android:id="@+id/button_gps"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="10dp"
-        android:text="Map"
-        app:layout_constraintBottom_toTopOf="@+id/button_pay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_pay"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginEnd="106dp"
-        android:text="@string/pay"
-        app:layout_constraintBottom_toTopOf="@+id/button_profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_gps" />
-
-    <Button
-        android:id="@+id/button_profile"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="106dp"
-        android:text="@string/profile"
-        app:layout_constraintBottom_toTopOf="@+id/button_settings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_pay" />
-
-    <Button
-        android:id="@+id/button_settings"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="196dp"
-        android:text="@string/settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_profile" />
+    android:orientation="vertical">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/greenglup"
+            android:padding="20dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:elevation="12dp"
+                android:id="@+id/main_view2"
+                app:cardCornerRadius="50dp"
+                android:layout_centerVertical="true"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.0"
+                app:strokeWidth="5dp"
+                app:strokeColor="@color/black">
+
+                <Button
+                    android:id="@+id/button_profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"/>
+
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/main_View1"
+                    android:src="@drawable/antoniocosta"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true">
+                </ImageView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/view2"
+                    android:fontFamily="@font/bungee_regular"
+                    android:includeFontPadding="false"
+                    android:text="Hello"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/main_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/bungee_regular"
+                    android:layout_toRightOf="@+id/view2"
+                    android:includeFontPadding="false"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-70dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="175dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/greenglup"
+                app:cardElevation="10dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/yellowglup">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/button_main_balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/money_icon_app"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-3dp"/>
+                    <TextView
+                        android:id="@+id/main_payment_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/bungee_regular"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:id="@+id/payment_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Balance"
+                        android:textSize="14sp"
+                        android:includeFontPadding="false"
+                        android:layout_below="@+id/main_payment_label"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linear_1"
+            android:padding="10dp"
+            android:layout_gravity="center">
+        <Button
+            android:id="@+id/button_gps"
+            android:layout_width="170dp"
+            android:layout_height="175dp"
+            android:text="Map"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/cardview"/>
+
+        <Button
+            android:id="@+id/button_pay"
+            android:layout_width="170dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/button_gps"
+            android:text="@string/pay"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/cardview"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/cardview">
+
+        <Button
+            android:id="@+id/button_profile"
+            android:layout_width="170dp"
+            android:layout_height="175dp"
+            android:text="@string/profile"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/cardview"/>
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="170dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/button_profile"
+            android:text="@string/settings"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/cardview"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

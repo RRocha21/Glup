@@ -1010,6 +1010,7 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color cardview
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -1883,6 +1884,7 @@ id bounce
 id buttonPanel
 id button_forgot
 id button_gps
+id button_main_balance
 id button_new_user
 id button_next
 id button_old_user
@@ -2024,10 +2026,15 @@ id line
 id line1
 id line3
 id linear
+id linear_1
 id listMode
 id list_item
 id login_email
 id login_password
+id main_View1
+id main_full_name
+id main_payment_label
+id main_view2
 id masked
 id material_clock_display
 id material_clock_face

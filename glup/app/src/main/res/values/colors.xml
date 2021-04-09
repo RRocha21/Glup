@@ -10,5 +10,6 @@
     <color name="lightWhite">#ecece7</color>
     <color name="greenglup">#669933</color>
     <color name="yellowglup">#E1D358</color>
+    <color name="cardview">#2e4616</color>
 
 </resources>
