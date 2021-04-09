@@ -58,7 +58,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/main_view2"
+                android:layout_marginLeft="10dp"
                 android:gravity="left">
 
                 <TextView
@@ -78,6 +79,7 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/bungee_regular"
                     android:layout_toRightOf="@+id/view2"
+                    android:text="Antonio Costa"
                     android:includeFontPadding="false"
                     android:textSize="21sp"
                     android:textColor="@color/black"/>
@@ -123,6 +125,7 @@
                         android:id="@+id/main_payment_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="123$"
                         android:textSize="25sp"
                         android:includeFontPadding="false"
                         android:fontFamily="@font/bungee_regular"

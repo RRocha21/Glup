@@ -103,7 +103,8 @@
             android:layout_height="wrap_content"
             android:background="@color/greenglup"
             android:text="Next"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:fontFamily="@font/bungee_regular" />
         <Button
             android:id="@+id/button_old_user"
             android:layout_width="match_parent"
@@ -112,8 +113,9 @@
             android:text="@string/back_to_sign_in_text"
             android:textColor="@color/greenglup"
             android:elevation="0dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/bungee_regular" />
 
     </LinearLayout>
 

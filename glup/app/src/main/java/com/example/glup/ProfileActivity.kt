@@ -60,6 +60,9 @@ class ProfileActivity: AppCompatActivity() {
         findViewById<Button>(R.id.update_profile).setOnClickListener{
             updateprofile()
         }
+        findViewById<Button>(R.id.update_pass).setOnClickListener{
+            openChangeActivity()
+        }
     }
 
     private fun showdetails() {
@@ -113,7 +116,7 @@ class ProfileActivity: AppCompatActivity() {
 //        startActivity(intent)
 
     }
-    
+
     private fun validateEmail(): Boolean {
         val val_email = pemail.text.toString()
 
@@ -241,4 +244,8 @@ class ProfileActivity: AppCompatActivity() {
         startActivity(intent)
     }
 
+    private fun openChangeActivity() {
+        val intent = Intent(this, ChangeActivity::class.java)
+        startActivity(intent)
+    }
 }

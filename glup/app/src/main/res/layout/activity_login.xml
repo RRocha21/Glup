@@ -76,22 +76,23 @@
 
             <Button
                 android:id="@+id/button_forgot"
-                android:layout_width="200dp"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
                 android:text=" Forgot Password?"
                 android:textColor="@color/greenglup"
                 android:layout_gravity="right"
                 android:elevation="0dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginBottom="5dp"
-                />
+                android:fontFamily="@font/bungee_regular" />
             <Button
                 android:id="@+id/button_sign_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/greenglup"
                 android:text="Sign In"
+                android:fontFamily="@font/bungee_regular"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white" />
 
@@ -101,15 +102,16 @@
                 android:layout_height="wrap_content"
                 android:background="#00000000"
                 android:text="NEW USER? SIGN UP"
+                android:fontFamily="@font/bungee_regular"
                 android:textColor="@color/greenglup"
                 android:elevation="0dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginBottom="5dp" />
 
         </LinearLayout>
 
         <TextView
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:layout_marginBottom="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\56bc50a61ef94672d42ca0f13601f2b9\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database-ktx:19.7.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\bf772b830650f8d0465de542159ffa41\jetified-firebase-database-ktx-19.7.0\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\3631fbd94e627295dd816c185f3eea21\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:2:1-21:12
@@ -52,25 +52,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\renat\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\cbc33a4149d91298078399d2cc08c2ea\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\538241824c0d2a216786689ec0b5d421\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\9347f55185b46494a3a07071a19f7f52\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:5:5-32:19
 MERGED from [com.google.firebase:firebase-database-ktx:19.7.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\bf772b830650f8d0465de542159ffa41\jetified-firebase-database-ktx-19.7.0\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-database-ktx:19.7.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\bf772b830650f8d0465de542159ffa41\jetified-firebase-database-ktx-19.7.0\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\renat\.gradle\caches\transforms-2\files-2.1\3631fbd94e627295dd816c185f3eea21\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:11:5-19:19
@@ -128,45 +128,49 @@ ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:16:27-74
 activity#com.example.glup.Registration2Activity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:19:9-59
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:20:9-59
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:19:19-56
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:20:19-56
 activity#com.example.glup.Forgot3Activity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:20:9-53
-	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:20:19-50
-activity#com.example.glup.Forgot2Activity
 ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:21:9-53
 	android:name
 		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:21:19-50
+activity#com.example.glup.Forgot2Activity
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:22:9-53
+	android:name
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:22:19-50
 activity#com.example.glup.RegistrationActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:22:9-58
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:23:9-58
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:22:19-55
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:23:19-55
 activity#com.example.glup.MapActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:23:9-49
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:24:9-49
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:23:19-46
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:24:19-46
 activity#com.example.glup.PaymentsActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:24:9-54
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:25:9-54
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:24:19-51
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:25:19-51
 activity#com.example.glup.ProfileActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:25:9-53
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:26:9-53
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:25:19-50
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:26:19-50
 activity#com.example.glup.SettingsActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:26:9-54
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:27:9-54
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:26:19-51
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:27:19-51
 activity#com.example.glup.MainActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:27:9-50
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:28:9-50
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:27:19-47
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:28:19-47
 activity#com.example.glup.ForgotActivity
-ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:28:9-52
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:29:9-52
 	android:name
-		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:28:19-49
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:29:19-49
+activity#com.example.glup.ChangeActivity
+ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:30:9-52
+	android:name
+		ADDED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml:30:19-49
 uses-sdk
 INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\renat\StudioProjects\Glup\glup\app\src\main\AndroidManifest.xml

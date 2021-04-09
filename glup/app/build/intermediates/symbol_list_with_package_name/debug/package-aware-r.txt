@@ -2336,6 +2336,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_change
 layout activity_forgot
 layout activity_forgot2
 layout activity_forgot3
