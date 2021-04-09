@@ -1,0 +1,2 @@
+com/example/glup/BuildConfig.java
+ com.example.glup.BuildConfig
