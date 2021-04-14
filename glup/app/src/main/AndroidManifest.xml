@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Glup">
+        <activity android:name=".ParkingStart"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".Registration2Activity" />
         <activity android:name=".Forgot3Activity" />
         <activity android:name=".Forgot2Activity" />
@@ -28,7 +28,6 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ForgotActivity" />
         <activity android:name=".ChangeActivity" />
-
     </application>
 
 </manifest>

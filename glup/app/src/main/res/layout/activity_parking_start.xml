@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".ParkingStartActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/greenglup">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/Informacoes_Local"
+            android:layout_width="252dp"
+            android:layout_height="122dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.0"
+            app:cardCornerRadius="50dp"
+            app:strokeColor="@color/black"
+            app:cardBackgroundColor="@color/lightWhite"
+            app:strokeWidth="5dp"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="39dp"
+            android:layout_gravity="center">>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/bungee_regular"
+                    android:includeFontPadding="true"
+                    android:text="Local:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-18dp"
+                    android:fontFamily="@font/bungee_regular"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:text="Universidade de Aveiro"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/bungee_regular"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:text="Valor:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/bungee_regular"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:text="€0,50/hr"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView></FrameLayout>
+
+    <Button
+        android:id="@+id/Selecionar_Matrícula"
+        android:layout_width="259dp"
+        android:layout_height="64dp"
+        android:text="Selecionar Matrícula"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="259dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="05dp"
+        android:text="Start"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Tempo_Decorrido"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.0"
+        app:cardCornerRadius="50dp"
+        app:strokeColor="@color/black"
+        app:cardBackgroundColor="@color/lightWhite"
+        app:strokeWidth="5dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="438dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="top"
+            android:includeFontPadding="true"
+            android:layout_marginTop="05dp"
+            android:text="Tempo Decorrido:"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Valor_Total"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.0"
+        app:cardCornerRadius="50dp"
+        app:strokeColor="@color/black"
+        app:cardBackgroundColor="@color/lightWhite"
+        app:strokeWidth="5dp"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="438dp"
+        android:layout_toRightOf="@+id/Tempo_Decorrido"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bungee_regular"
+            android:includeFontPadding="true"
+            android:text="Valor Total:"
+            android:textColor="@color/black"
+            android:layout_marginTop="05dp"
+            android:textSize="15dp" />
+    </com.google.android.material.card.MaterialCardView></RelativeLayout>
+
+    <Button
+        android:id="@+id/Finish"
+        android:layout_width="259dp"
+        android:layout_height="64dp"
+        android:text="Finish"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+</LinearLayout>
