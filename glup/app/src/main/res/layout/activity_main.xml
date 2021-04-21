@@ -161,7 +161,9 @@
             android:text="Map"
             android:textSize="20sp"
             android:fontFamily="@font/bungee_regular"
-            android:textColor="@color/cardview"/>
+            android:textColor="@color/cardview"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/yellowglup"/>
 
         <Button
             android:id="@+id/button_pay"
@@ -172,7 +174,9 @@
             android:text="@string/pay"
             android:textSize="20sp"
             android:fontFamily="@font/bungee_regular"
-            android:textColor="@color/cardview"/>
+            android:textColor="@color/cardview"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/yellowglup"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -192,7 +196,9 @@
             android:text="@string/profile"
             android:textSize="20sp"
             android:fontFamily="@font/bungee_regular"
-            android:textColor="@color/cardview"/>
+            android:textColor="@color/cardview"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/yellowglup"/>
 
         <Button
             android:id="@+id/button_settings"
@@ -203,7 +209,9 @@
             android:text="@string/settings"
             android:textSize="20sp"
             android:fontFamily="@font/bungee_regular"
-            android:textColor="@color/cardview"/>
+            android:textColor="@color/cardview"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/yellowglup"/>
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

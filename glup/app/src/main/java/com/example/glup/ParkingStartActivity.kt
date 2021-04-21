@@ -21,7 +21,7 @@ class ParkingStartActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_change)
+        setContentView(R.layout.activity_parking_start)
 
 
 //        findViewById<Button>(R.id.next_forgot).setOnClickListener(){
@@ -45,30 +45,32 @@ class ParkingStartActivity : AppCompatActivity() {
 //
 //    }
 
-    fun showdetails() {
+//    fun showdetails() {
+//
+//        val myRef= FirebaseDatabase.getInstance().getReference("locals")
+//
+//        val postListener = object : ValueEventListener {
+//            override fun onDataChange(dataSnapshot: DataSnapshot) {
+//
+//                if (dataSnapshot.exists()) {
+//                    val localvaluefromDb = dataSnapshot.child("Universidade de Aveiro").child("localvalue").getValue<String>()
+//
+//                    localvalue.text= Editable.Factory.getInstance().newEditable(localvaluefromDb.toString().plus("€"))
+//                }
+//            }
+//            override fun onCancelled(databaseError: DatabaseError) {
+//                // Getting Post failed, log a message
+//            }
+//        }
+//        myRef.addValueEventListener(postListener)
+//
+//
+//        fun openNext() {
+//        val intent=Intent(this, Forgot2Activity::class.java)
+//        startActivity(intent)
+//          }
+//    }
 
-        val myRef= FirebaseDatabase.getInstance().getReference("locals")
 
-        val postListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-
-                if (dataSnapshot.exists()) {
-                    val localvaluefromDb = dataSnapshot.child("Universidade de Aveiro").child("localvalue").getValue<String>()
-
-                    localvalue.text= Editable.Factory.getInstance().newEditable(localvaluefromDb.toString().plus("€"))
-                }
-            }
-            override fun onCancelled(databaseError: DatabaseError) {
-                // Getting Post failed, log a message
-            }
-        }
-        myRef.addValueEventListener(postListener)
-
-
-        fun openNext() {
-        val intent=Intent(this, Forgot2Activity::class.java)
-        startActivity(intent)
     }
-
-
-}}}
+}

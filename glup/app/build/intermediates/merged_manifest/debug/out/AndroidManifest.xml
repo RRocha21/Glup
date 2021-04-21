@@ -24,7 +24,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Glup" >
-        <activity android:name="com.example.glup.ParkingStart" />
         <activity android:name="com.example.glup.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.glup.ParkingStartActivity" />
         <activity android:name="com.example.glup.Registration2Activity" />
         <activity android:name="com.example.glup.Forgot3Activity" />
         <activity android:name="com.example.glup.Forgot2Activity" />
