@@ -24,28 +24,28 @@ class ParkingStartActivity : AppCompatActivity() {
         setContentView(R.layout.activity_change)
 
 
-        findViewById<Button>(R.id.next_forgot).setOnClickListener(){
-            openNext()
-        }
+//        findViewById<Button>(R.id.next_forgot).setOnClickListener(){
+//            openNext()
+//        }
 
-        val maxCounter: Long = 300000
-        val diff: Long = 1000
+//        val maxCounter: Long = 300000
+//        val diff: Long = 1000
+//
+//        object : CountDownTimer(maxCounter, diff) {
+//            override fun onTick(millisUntilFinished: Long) {
+//                val diff = maxCounter - millisUntilFinished
+//                mTextField.setText("seconds completed: " + diff / 1000)
+//                //here you can have your logic to set text to edittext
+//            }
+//
+//            override fun onFinish() {
+//                mTextField.setText("done!")
+//            }
+//        }.start()
+//
+//    }
 
-        object : CountDownTimer(maxCounter, diff) {
-            override fun onTick(millisUntilFinished: Long) {
-                val diff = maxCounter - millisUntilFinished
-                mTextField.setText("seconds completed: " + diff / 1000)
-                //here you can have your logic to set text to edittext
-            }
-
-            override fun onFinish() {
-                mTextField.setText("done!")
-            }
-        }.start()
-
-    }
-
-    private fun showdetails() {
+    fun showdetails() {
 
         val myRef= FirebaseDatabase.getInstance().getReference("locals")
 
@@ -65,10 +65,10 @@ class ParkingStartActivity : AppCompatActivity() {
         myRef.addValueEventListener(postListener)
 
 
-        private fun openNext() {
+        fun openNext() {
         val intent=Intent(this, Forgot2Activity::class.java)
         startActivity(intent)
     }
 
 
-}
+}}}

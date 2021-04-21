@@ -1796,6 +1796,8 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id Finish
+id Informacoes_Local
 id META
 id NO_DEBUG
 id SHIFT
@@ -1803,8 +1805,12 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id Selecionar_Matrícula
+id Start
 id TOP_END
 id TOP_START
+id Tempo_Decorrido
+id Valor_Total
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2343,6 +2349,7 @@ layout activity_forgot3
 layout activity_login
 layout activity_main
 layout activity_map
+layout activity_parking_start
 layout activity_payments
 layout activity_profile
 layout activity_registration

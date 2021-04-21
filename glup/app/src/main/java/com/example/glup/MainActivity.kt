@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun openPaymentsActivity() {
-        val intent = Intent(this, PaymentsActivity::class.java)
+        val intent = Intent(this, ParkingStartActivity::class.java)
         startActivity(intent)
     }
     private fun openProfileActivity() {
