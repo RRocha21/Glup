@@ -12,6 +12,10 @@
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\drawable_userprofile.png.flat",
+        "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\drawable\\userprofile.png"
+    },
+    {
         "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\drawable_glup.png.flat",
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\drawable\\glup.png"
     },

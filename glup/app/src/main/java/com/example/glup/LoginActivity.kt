@@ -75,8 +75,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-
-
     private fun validateUser(): Boolean {
         val val_email = logemail.text.toString()
 

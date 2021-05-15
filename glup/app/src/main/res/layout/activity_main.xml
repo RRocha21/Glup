@@ -44,7 +44,7 @@
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:id="@+id/main_View1"
-                    android:src="@drawable/antoniocosta"
+                    android:src="@drawable/userprofile"
                     android:layout_alignParentTop="true"
                     android:layout_centerVertical="true">
                 </ImageView>
