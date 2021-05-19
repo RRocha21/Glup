@@ -77,7 +77,7 @@ class ProfileActivity: AppCompatActivity() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
 
                 if (dataSnapshot.exists()) {
-                    val balancefromDb = dataSnapshot.child(user.uid).child("balance").getValue<Int>()
+                    val balancefromDb = dataSnapshot.child(user.uid).child("balance").getValue<Double>()
                     val fullnamefromDb = dataSnapshot.child(user.uid).child("fullname").getValue<String>()
                     val imagefromDb = dataSnapshot.child(user.uid).child("image").getValue<Int>()
                     val niffromDb = dataSnapshot.child(user.uid).child("nif").getValue<String>()

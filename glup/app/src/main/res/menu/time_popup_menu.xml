@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_ten"
+        android:title="10m"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_fifteen"
+        android:title="15m"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_thirty"
+        android:title="30m"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_fourtyfive"
+        android:title="45m"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_one"
+        android:title="1h"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_oneandhalf"
+        android:title="1h30m"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_two"
+        android:title="2h00m"
+        app:showAsAction="never" />
+
+</menu>

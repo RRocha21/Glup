@@ -73,8 +73,14 @@ class Registration2Activity : AppCompatActivity() {
 
         // write in the database
         newuser.child(user.uid).setValue(new_user)
-        newuser.child(user.uid).child("license").child("1").setValue("1")
+        newuser.child(user.uid).child("license").child("1").setValue("AA-00-FF")
         newuser.child(user.uid).child("tickets").child("1").setValue("1")
+        newuser.child(user.uid).child("payments").child("hour").setValue(0)
+        newuser.child(user.uid).child("payments").child("minute").setValue(0)
+        newuser.child(user.uid).child("payments").child("day").setValue(0)
+        newuser.child(user.uid).child("payments").child("month").setValue(0)
+        newuser.child(user.uid).child("payments").child("year").setValue(0)
+
 
 
         // going to next activity

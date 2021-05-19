@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_one"
+        android:title="FF-00-FF"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_two"
+        android:title="FF-00-FA"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_three"
+        android:title="AF-00-FF"
+        app:showAsAction="never" />
+</menu>

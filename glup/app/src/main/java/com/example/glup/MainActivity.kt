@@ -50,14 +50,12 @@ class MainActivity : AppCompatActivity() {
 
         val myRef= FirebaseDatabase.getInstance().getReference("users")
 
-
-
         val postListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
 
                 if (dataSnapshot.exists()) {
 
-                    val balancefromDb = dataSnapshot.child(user.uid).child("balance").getValue<Int>()
+                    val balancefromDb = dataSnapshot.child(user.uid).child("balance").getValue<Double>()
                     val fullnamefromDb = dataSnapshot.child(user.uid).child("fullname").getValue<String>()
 
                     mbalance.text= Editable.Factory.getInstance().newEditable(balancefromDb.toString().plus("$"))
@@ -77,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun openPaymentsActivity() {
-        val intent = Intent(this, ParkingStartActivity::class.java)
+        val intent = Intent(this, PaymentsActivity::class.java)
         startActivity(intent)
     }
     private fun openProfileActivity() {

@@ -69,7 +69,7 @@ class LoginActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         openMainActivity()
                     } else {
-                        Toast.makeText(this, "Error !!" + task.exception, Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Wrong Email or Password" , Toast.LENGTH_LONG).show()
                     }
                 }
     }

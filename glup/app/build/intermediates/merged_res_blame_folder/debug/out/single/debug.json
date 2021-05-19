@@ -8,6 +8,10 @@
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\drawable\\money_icon_app.png"
     },
     {
+        "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\menu_time_popup_menu.xml.flat",
+        "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\menu\\time_popup_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -52,6 +56,10 @@
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\layout\\activity_map.xml"
     },
     {
+        "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\menu_license_popup_menu.xml.flat",
+        "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\menu\\license_popup_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_change.xml.flat",
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\layout\\activity_change.xml"
     },
@@ -70,6 +78,10 @@
     {
         "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\menu_location_popup_menu.xml.flat",
+        "source": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\src\\main\\res\\menu\\location_popup_menu.xml"
     },
     {
         "merged": "C:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot.xml.flat",
