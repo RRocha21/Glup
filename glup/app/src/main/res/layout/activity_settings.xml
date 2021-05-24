@@ -17,7 +17,8 @@
             android:text="@string/options_text"
             android:textSize="40sp"
             android:fontFamily="@font/bungee_regular"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/greenglup"/>
 
     </RelativeLayout>
 
@@ -35,10 +36,10 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@color/white"
-
             android:text="Dark Mode"
             android:textSize="30sp"
-            android:textColor="@color/greenglup"/>
+            android:textColor="@color/greenglup"
+            android:fontFamily="@font/bungee_regular"/>
 
         <Switch
             android:id="@+id/switch_reminder"
@@ -48,41 +49,41 @@
             android:background="@color/white"
             android:text="Lembrete"
             android:textSize="30sp"
-            android:textColor="@color/greenglup"/>
+            android:textColor="@color/greenglup"
+            android:fontFamily="@font/bungee_regular"/>
+
+
 
         <Button
             android:padding="15dp"
-            android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:id="@+id/tempo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/editbox_background"
-            android:backgroundTint="@color/greenglup"
-            android:drawableEnd="@android:drawable/arrow_down_float"
             android:drawablePadding="50dp"
-            android:hint="15 min"
-            android:textSize="30dp"></Button>
+            android:text="15 min"
+            android:textSize="25sp"
+            android:fontFamily="@font/bungee_regular"></Button>
+
+
 
 
         <Button
             android:padding="15dp"
-            android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:id="@+id/idioma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/editbox_background"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@android:drawable/arrow_down_float"
             android:drawablePadding="50dp"
-            android:hint="Idioma"
-            android:textSize="30dp"
-            android:textColor="@color/greenglup"></Button>
+            android:text="Idioma"
+            android:textSize="25sp"
+            android:fontFamily="@font/bungee_regular"></Button>
 
 
     </LinearLayout>

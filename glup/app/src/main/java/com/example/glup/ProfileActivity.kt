@@ -226,7 +226,7 @@ class ProfileActivity: AppCompatActivity() {
 
 
     private fun openBalanceActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, BalanceActivity::class.java)
         startActivity(intent)
     }
 

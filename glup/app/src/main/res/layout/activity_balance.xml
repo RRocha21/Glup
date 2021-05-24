@@ -50,7 +50,6 @@
                 android:id="@+id/saldo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerhorizontal="true"
                 android:backgroundTint="@color/greenglup"
                 android:text="€7.82"
                 android:textSize="30dp"
@@ -79,7 +78,8 @@
             android:layout_marginTop="100dp"
             android:text="Carregar Carteira"
             android:textSize="50dp"
-            android:textColor="@color/white"></Button>
+            android:textColor="@color/white"
+            android:fontFamily="@font/bungee_regular"></Button>
 
 
     </LinearLayout>

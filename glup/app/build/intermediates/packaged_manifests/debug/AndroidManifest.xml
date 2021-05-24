@@ -45,6 +45,7 @@
         <activity android:name="com.example.glup.MainActivity" />
         <activity android:name="com.example.glup.ForgotActivity" />
         <activity android:name="com.example.glup.ChangeActivity" />
+        <activity android:name="com.example.glup.BalanceActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

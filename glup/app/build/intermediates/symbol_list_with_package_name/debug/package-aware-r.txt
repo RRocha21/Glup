@@ -1918,6 +1918,7 @@ id button_sign_in
 id button_sign_up
 id cache_measures
 id cancel_button
+id carregar_carteira
 id center
 id center_horizontal
 id center_vertical
@@ -2022,6 +2023,7 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
+id idioma
 id ifRoom
 id ignore
 id ignoreRequest
@@ -2171,6 +2173,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saldo
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2237,6 +2240,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tempo
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2367,6 +2371,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_balance
 layout activity_change
 layout activity_forgot
 layout activity_forgot2
