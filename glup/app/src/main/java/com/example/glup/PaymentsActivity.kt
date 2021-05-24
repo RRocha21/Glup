@@ -75,6 +75,7 @@ class PaymentsActivity: AppCompatActivity() {
         var local_read : String = ""
         var license_read : String = ""
 
+
         licensepress.setOnClickListener {
 
             val license1 = showlicense1plate.text.toString()
@@ -158,6 +159,7 @@ class PaymentsActivity: AppCompatActivity() {
                 if (item.title.equals("Zone E")) zone_cost = 1.0
 
                 local_read  = item.title as String
+
                 getdate(
                     time_read.roundToInt(),
                     getcost(zone_cost,time_read),
@@ -207,7 +209,6 @@ class PaymentsActivity: AppCompatActivity() {
 
                     if ((currentday==dayfromDb)and(currentmonth==monthfromDb)and(currentyear==yearfromDb))
                     {
-
                         if (hourfromDb != null) {
                             if(hourfromDb>currenthour) {
                                 if (minutefromDb != null) {
@@ -270,7 +271,6 @@ class PaymentsActivity: AppCompatActivity() {
                                 myRef.child(user.uid).child("tickets").child(randomnumber.toString()).child("Zone").setValue(local)
 
 
-
                             }
                         }
 
@@ -291,6 +291,7 @@ class PaymentsActivity: AppCompatActivity() {
     }
 
     private fun getlicense(){
+
          val user = FirebaseAuth.getInstance().currentUser
 
          val myRef = FirebaseDatabase.getInstance().getReference("users")

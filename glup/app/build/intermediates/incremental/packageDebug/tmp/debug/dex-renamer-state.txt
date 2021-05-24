@@ -1,4 +1,4 @@
-#Wed May 19 14:47:32 BST 2021
+#Thu May 20 22:33:10 BST 2021
 base.2=C\:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 path.2=14/classes.dex
 base.1=C\:\\Users\\renat\\StudioProjects\\Glup\\glup\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
